@@ -2,7 +2,7 @@ require "yaml"
 require "pry"
 emoticons = YAML.load_file("./lib/emoticons.yml")
 
-def load_library("./lib/emoticons.yml")
+def load_library(./lib/emoticons.yml)
   new_hash = {}
   emoticons.each do |meaning, emoticon_array|
     binding.pry
