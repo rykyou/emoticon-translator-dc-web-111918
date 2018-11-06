@@ -8,7 +8,7 @@ def load_library(file_path)
   emoticons.each do |meaning, emoticon_array|
     if new_hash["get_meaning"] && new_hash["get_emoticon"]
       new_hash["get_meaning"][emoticon_array[1]] = meaning
-      new_hash["get_emoticon"][emoticon_array[0]] = emoticon_array[1]}      
+      new_hash["get_emoticon"][emoticon_array[0]] = emoticon_array[1]      
     else
       new_hash["get_meaning"] = {emoticon_array[1] => meaning}
       new_hash["get_emoticon"] = {emoticon_array[0] => emoticon_array[1]}
