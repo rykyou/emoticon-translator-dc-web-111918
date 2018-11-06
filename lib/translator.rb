@@ -14,6 +14,7 @@ def load_library(file_path)
       new_hash["get_emoticon"] = {emoticon_array[0] => emoticon_array[1]}
     end 
   end
+  binding.pry
 end
 
 def get_japanese_emoticon
