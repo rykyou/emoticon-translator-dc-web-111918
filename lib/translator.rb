@@ -19,10 +19,12 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   emoticons_hash = load_library(file_path)
+  outcome =""
   emoticons_hash.each do |type, hash|
     if hash[emoticon]
       outcome = hash[emoticon]
     end
+    outcome
   end 
   # outcome = ""
   # emoticons_hash["get_emoticon"].each do |pair|
