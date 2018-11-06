@@ -31,5 +31,6 @@ def get_english_meaning(file_path, emoticon)
   if emoticons_hash["get_meaning"][emoticon]
     emoticons_hash["get_emoticon"][emoticon]
   else 
+    "Sorry, that emoticon was not found"
   end
 end
