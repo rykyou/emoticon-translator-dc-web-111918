@@ -19,15 +19,11 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   emoticons_hash = load_library(file_path)
-  outcome =""
-  emoticons_hash.each do |type, hash|
-    if hash[emoticon]
-      outcome = hash[emoticon]
-    else 
-      "Sorry, that emoticon was not found"
-    end
+  if emoticons_hash["get_emoticon"][emoticon]
+    emoticons_hash["get_emoticon"][emoticon]
+  else 
+    "Sorry, that emoticon was not found"
   end 
-  outcome
 end
 
 def get_english_meaning
