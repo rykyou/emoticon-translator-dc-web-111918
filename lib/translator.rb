@@ -19,8 +19,8 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   emoticons_hash = load_library(file_path)
-  emoticons_hash.each do |type, hash|
-    
+  emoticons_hash["get_emoticon"].each do |hash|
+    binding.pry
   end
 end
 
