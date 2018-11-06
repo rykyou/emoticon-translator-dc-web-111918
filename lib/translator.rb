@@ -25,7 +25,10 @@ def get_japanese_emoticon(file_path, emoticon)
       outcome = pair[1]
     end 
   end
-  outcome
+  if outcome.length > 0 
+    outcome
+  else 
+    ""
 end
 
 def get_english_meaning
