@@ -23,20 +23,11 @@ def get_japanese_emoticon(file_path, emoticon)
   emoticons_hash.each do |type, hash|
     if hash[emoticon]
       outcome = hash[emoticon]
+    else 
+      "Sorry, that emoticon was not found"
     end
   end 
   outcome
-  # outcome = ""
-  # emoticons_hash["get_emoticon"].each do |pair|
-  #   if emoticon == pair[0]
-  #     outcome = pair[1]
-  #   end 
-  # end
-  # if outcome.length > 0 
-  #   outcome
-  # else 
-  #   "Sorry, that emoticon was not found"
-  # end
 end
 
 def get_english_meaning
