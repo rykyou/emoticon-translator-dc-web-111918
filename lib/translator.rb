@@ -24,8 +24,8 @@ def get_japanese_emoticon(file_path, emoticon)
     if hash[emoticon]
       outcome = hash[emoticon]
     end
-    outcome
   end 
+  outcome
   # outcome = ""
   # emoticons_hash["get_emoticon"].each do |pair|
   #   if emoticon == pair[0]
